@@ -1,0 +1,19 @@
+[package]
+name = "rust-on-android"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# https://docs.rs/
+
+[dependencies]
+# only be used for android OS
+#[target.'cfg(target_os="android")'.dependencies]
+jni = "0.21.1"
+rand = "0.8.5"
+time = "0.3.23"
+chrono = "0.4.26"
+
+[lib]
+name = "rust_on_android"
+crate-type = ["dylib"]
